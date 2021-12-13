@@ -1,25 +1,28 @@
+ 
+package assignment;
 
-package control_statement;
-
-// This is if..else..if ladder program.
+// Program to find grade of students using if...else...if ladder.
+import java.util.Scanner;
 public class IfElseIfLadder {
-    public static void main(String[] args) {
-        int month=4;
-        String season;
-        if(month==12 || month==1 || month==2)
-            season="winter";
-        else if(month==3 || month==4 || month==5)
-            season="spring";
-        else if(month==6 || month==7 || month==8)
-            season="autumn";
-        else if (month==9 || month==10 || month==11)
-            season="summer";
+    public static void main(String args [])
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the marks");
+        float a= sc.nextFloat();
+        if(a<=25.0)
+            System.out.println("Grade is F");
+        else if(a<=45.0 && a>=26.0)
+            System.out.println("Grade is E");
+        else if(a<=50.0 && a>=46.0)
+            System.out.println("Grade is D");
+        else if(a<=60.0 && a>=51.0)
+            System.out.println("Grade is C");
+        else if(a<=80.0 && a>=61.0)
+            System.out.println("Grade is B");       
+        else if(a<=100.0 && a>=81.0)
+            System.out.println("Grade is A");
         else
-            season="Incorrect entry";
-        System.out.println("Entered month lies in the season "+season);
-        
-        
-        
-        
+            System.out.println("Invalid Input");
     }
+        
 }

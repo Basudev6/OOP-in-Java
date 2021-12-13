@@ -1,7 +1,7 @@
 
-package control_statement;
+package assignment;
 
-// Program to find whether the given number is  greater then 10 or not and if greater then 10 , it is even or odd .
+
 public class NestedIfTest {
     public static void main(String[] args) {
         int x= 25;
@@ -11,7 +11,7 @@ public class NestedIfTest {
                 System.out.println("x is greater than 10 and even number");
             
             else
-                System.out.println("x is geater than 10 but odd number");
+                System.out.println("x is greater than 10 but odd number");
         }
         else
             System.out.println("x is smaller than 10");
@@ -19,3 +19,5 @@ public class NestedIfTest {
     }
   
 }
+
+
